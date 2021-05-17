@@ -13,8 +13,8 @@ module.exports = {
       jsx: true,
     },
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier'],
-  plugins: ['prettier', 'react', 'react-hooks'],
+  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier', 'plugin:jest/recommended'],
+  plugins: ['prettier', 'react', 'react-hooks', 'jest'],
   rules: {
     'prettier/prettier': [
       'error',
