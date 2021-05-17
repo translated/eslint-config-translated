@@ -1,59 +1,42 @@
 # 🧹 ESLint config Translated
 
-This package provides an ESLint configuration for JavaScript projects (React.js or Node.js).
- 
-This ESLint config extends the following configs
-```
-eslint:recommended
-prettier
-plugin:react/recommended
-plugin:react-hooks/recommended
-plugin:jest/recommended
-```
+This package provides the ESLint configuration for JavaScript projects, either NodeJS or ReactJS, in Translated organization.
 
-On top of the base config, these rules are explicitly applied
-```
-"no-console": "off"
-"max-lines-per-function": ["error", 200]
-"import/order": "error"
-```
+You can check eslint plugins used directly from the [plugins](https://github.com/translated/eslint-config-translated/blob/main/index.js) section.
 
-The styling follows the prettier recommendations plus this custom config
-```
-"singleQuote": true
-"printWidth": 160
-```
+## Rules
 
-- `singleQuote` to improve script readability
-- wider `printWidth` because in Translated every dev has at least a 24" external monitor
+The following rules are explicitly applied on top of the base configuration exported from plugins:
+- `"no-console": "off"`: services currently log using the native `console.log` and `console.error` without using 3rd party logging libraries
+- `"max-lines-per-function": ["error", 200]`: good indicator of a too complex function
+- `"import/order": "error"`: for improved readability
+- `"singleQuote": true`: for improved readability
+- `"printWidth": 160`: for improved readability, assuming company developers are supposed to use at least a 24" display
 
-### 💻 Installation
+## 💻 Installation
 
-To use this package, install it as a devDependency inside your project
-
-```
-yarn add --dev eslint eslint-config-translated
+Install package as a `devDependency`:
+```bash
+yarn add --dev eslint-config-translated
 ```
 
 ### 🪛 Configuration
-Create a `.eslintrc` file with the following content
 
-```
+Create a `.eslintrc` file with the following content:
+```json
 {
   "extends": ["eslint-config-translated"]
 }
 ```
 
-Add a lint script inside the `package.json`
-
-```
-"scripts": {
-  "lint": "eslint src --ext .js",
-  ...
-}
-```
-
 ### 🚀 Run the linter
+
+Find codebase errors:
+```bash
+yarn eslint .
 ```
-yarn lint
+
+Fix codebase errors:
+```bash
+yarn eslint --fix .
 ```
