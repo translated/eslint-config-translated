@@ -13,9 +13,12 @@ module.exports = {
       jsx: true,
     },
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'prettier', 'plugin:jest/recommended'],
-  plugins: ['prettier', 'react', 'react-hooks', 'jest'],
+  plugins: ['prettier', 'import', 'react', 'react-hooks', 'jest'],
+  extends: ['eslint:recommended', 'prettier', 'plugin:import/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jest/recommended'],
   rules: {
+    'no-console': 'off',
+    'no-unused-vars': 'off',
+    'max-lines-per-function': ['error', 200],
     'prettier/prettier': [
       'error',
       {
@@ -23,8 +26,6 @@ module.exports = {
         printWidth: 160,
       },
     ],
-    'no-console': 'off',
-    'no-unused-vars': 'off',
   },
   settings: {
     react: {
