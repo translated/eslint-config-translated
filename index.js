@@ -5,8 +5,8 @@ module.exports = {
     jest: true,
     node: true
   },
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    parser: '@babel/eslint-parser',
     ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
