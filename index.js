@@ -31,5 +31,8 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    jest: {
+      version: 'detect',
+    },
   },
 };
