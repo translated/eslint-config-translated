@@ -1,8 +1,10 @@
 {
   "name": "eslint-config-translated",
-  "type": "module",
   "description": "ESLint rules for JavaScript projects",
-  "version": "1.0.1",
+  "author": "Translated srl <info@translated.com> (https://github.com/translated)",
+  "repository": "https://github.com/translated/eslint-config-translated",
+  "type": "module",
+  "version": "1.0.2",
   "engines": {
     "node": ">=14"
   },
