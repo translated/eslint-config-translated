@@ -1,0 +1,35 @@
+{
+  "name": "eslint-config-translated",
+  "version": "1.0.15",
+  "description": "ESLint rules for JavaScript projects",
+  "author": "Translated srl <info@translated.com> (https://github.com/translated)",
+  "repository": "https://github.com/translated/eslint-config-translated",
+  "engines": {
+    "node": ">=14"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "eslint",
+    "translated",
+    "javascript",
+    "react",
+    "eslintconfig"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.14.2",
+    "@babel/eslint-parser": "^7.14.2",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.3.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "react": "^17.0.2"
+  }
+}
