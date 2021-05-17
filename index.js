@@ -14,7 +14,7 @@ module.exports = {
     },
   },
   plugins: ['prettier', 'import', 'react', 'react-hooks', 'jest'],
-  extends: ['eslint:recommended', 'prettier', 'plugin:import/recommended', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jest/recommended'],
+  extends: ['eslint:recommended', 'prettier', 'plugin:react/recommended', 'plugin:react-hooks/recommended', 'plugin:jest/recommended'],
   rules: {
     'no-console': 'off',
     'no-unused-vars': 'off',
@@ -26,6 +26,7 @@ module.exports = {
         printWidth: 160,
       },
     ],
+    'import/order': 'error',
   },
   settings: {
     react: {
