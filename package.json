@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-translated",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "ESLint rules for JavaScript projects",
   "author": "Translated srl <info@translated.com> (https://github.com/translated)",
   "repository": "https://github.com/translated/eslint-config-translated",
