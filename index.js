@@ -26,6 +26,7 @@ module.exports = {
       },
     ],
     'import/order': 'error',
+    'import/extensions': ['error', 'ignorePackages']
   },
   settings: {
     react: {

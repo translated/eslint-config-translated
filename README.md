@@ -1,6 +1,6 @@
-# 🧹 ESLint config Translated
+# Translated ESLint config
 
-This package provides the ESLint configuration for JavaScript projects, either NodeJS or ReactJS, in Translated organization.
+This package provides the ESLint configuration for JavaScript projects, both NodeJS and ReactJS, of Translated organization.
 
 You can check eslint plugins used directly from the [plugins](https://github.com/translated/eslint-config-translated/blob/main/index.js) section.
 
@@ -13,14 +13,14 @@ The following rules are explicitly applied on top of the base configuration expo
 - `"singleQuote": true`: for improved readability
 - `"printWidth": 160`: for improved readability, assuming company developers are supposed to use at least a 24" display
 
-## 💻 Installation
+## Installation
 
 Install package as a `devDependency`:
-```bash
+```sh
 yarn add --dev eslint-config-translated
 ```
 
-### 🪛 Configuration
+## Configuration
 
 Create a `.eslintrc` file with the following content:
 ```json
@@ -29,14 +29,9 @@ Create a `.eslintrc` file with the following content:
 }
 ```
 
-### 🚀 Run the linter
-
-Find codebase errors:
-```bash
-yarn eslint .
-```
+## Linting
 
 Fix codebase errors:
-```bash
+```sh
 yarn eslint --fix .
 ```
