@@ -5,7 +5,7 @@
   "author": "Translated srl <info@translated.com> (https://github.com/translated)",
   "repository": "https://github.com/translated/eslint-config-translated",
   "engines": {
-    "node": ">=14.19"
+    "node": ">=14.17"
   },
   "main": "index.js",
   "license": "MIT",
